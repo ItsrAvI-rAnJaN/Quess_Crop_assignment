@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-3i5x^at!9a0!l#b4)81bfthk*k8!cccnn(l_sm441@_kn5$-3$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 
 # Application definition
@@ -37,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'hr'
+    'hr',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -52,8 +55,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'hrms_backend.urls'
-CORS_ALLOW_ALL_ORIGINS = True
-
 
 TEMPLATES = [
     {
