@@ -1,5 +1,5 @@
 """
-WSGI config for hrms_backend project.
+WSGI config for hrms_lite project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
